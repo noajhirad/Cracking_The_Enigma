@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" styleClass="contentBoxes" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SecondPageUBoat.Dictionary.DictionaryController">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="wordsListComponent" maxHeight="100.0" prefHeight="100.0" styleClass="contentBoxes" />
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <VBox alignment="CENTER" maxWidth="1.7976931348623157E308" spacing="5.0" styleClass="contentBoxes" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="sectionTitle" text="Dictioary" />
+            <TextField fx:id="searchInputField" onKeyTyped="#searchInputFieldKeyTyped" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>

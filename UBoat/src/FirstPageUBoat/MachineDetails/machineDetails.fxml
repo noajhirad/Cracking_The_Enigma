@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FirstPageUBoat.MachineDetails.MachineDetailsController">
+   <center>
+      <FlowPane prefWrapLength="100.0" vgap="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="staticLabels" text="Number of rotors in the machine (number of rotors in use / total number of rotors):" />
+                  <Label fx:id="rotorsCountPH" styleClass="dynamicLabels" />
+                  <Label styleClass="dynamicLabels" text="/" />
+                  <Label fx:id="amountOfDefinedRotorsPH" styleClass="dynamicLabels">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="staticLabels" text="Number of reflectors:" />
+                  <Label fx:id="numOfReflectorsPH" styleClass="dynamicLabels" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="staticLabels" text="Number of processed messages:" />
+                  <Label fx:id="numOfMessagesPH" styleClass="dynamicLabels" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Label styleClass="staticLabels" text="Original machine code configuration:" />
+                  <Label fx:id="originalCodeConfigPH" styleClass="dynamicLabels" />
+               </children>
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </FlowPane>
+   </center>
+   <top>
+      <Label styleClass="sectionTitle" text="Machine Details" BorderPane.alignment="CENTER" />
+   </top>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>
