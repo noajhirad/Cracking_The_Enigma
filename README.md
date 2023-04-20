@@ -16,42 +16,23 @@ After great efforts by the Allies, they eventually managed to crack the Enigma (
 **The Project**
 
 The game starts with the **UBoat**, the first desktop client, that initiates a competition. To do so, the UBoat uploads an XML file that describes a machine, and includes details such as the machine's alphabet, a dictionary which the words to be encrypted can be taken from, the difficulty of the game (which you can read about later on) and mechanical details of the machine. You can see an example of an XML file in the /example-files folder. At the end of this document, you can also see the details about the machine Architecture, which plays a big part in the competition later.
+<img width="1440" alt="Screenshot 2023-04-20 at 19 08 30" src="https://user-images.githubusercontent.com/76840545/233443410-9ff5bf69-c9b3-4dbd-8622-ca009824144b.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 08 56" src="https://user-images.githubusercontent.com/76840545/233443418-ec908702-018e-4c50-9f1d-888e1cc5652c.png">
+
 
 Afterward, the UBoat initiates the task. He specifies how many Allies can enroll in the competition, configures the enigma machine, and encrypt a message. The UBoat can only encrypt words that appear in the dictionary (which he can see in the decryption tab). He can write it himself or click on the dictionary to choose the desired word. Finally, after enough teams enrolled in the competition, he spread his encrypted message and let the competition begin - the winner is the first team to decrypt it. 
+<img width="1440" alt="Screenshot 2023-04-20 at 19 09 16" src="https://user-images.githubusercontent.com/76840545/233443347-96ff2cab-1fe2-4827-8df9-b4391a5fe80e.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 14 15" src="https://user-images.githubusercontent.com/76840545/233443355-fa64227f-dce8-4354-a7d3-f3da5e986521.png">
 
 The second HTTP client is the **Allie**, a team leader in the competition. The Allie has several agents working for him trying to solve the UBoat task. His job is to spread the tasks to the Agents, gather the decryption candidates from them, and later report back to the Uboat. The Allie waits until enough Agents register to work with him, and after he is satisfied with the number of Agents enrolled, he can mark his team as ready - which indicates the server that the competition can start.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="1440" alt="Screenshot 2023-04-20 at 19 14 23" src="https://user-images.githubusercontent.com/76840545/233443502-8f9badb0-7eb2-4ef0-bdaf-eac108e122ba.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 13 50" src="https://user-images.githubusercontent.com/76840545/233443510-d75b89e5-2fd9-41e1-becc-cd0304efcdb9.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 13 08" src="https://user-images.githubusercontent.com/76840545/233443514-7484f5f8-2b64-4922-a214-e843ef51101b.png">
 
 The last client is the **Agent**, that works for Allie. First, while enrolling, he chooses an Allie to work with, specifies how many threads he'll use to decrypt the message, and how many strings he'll fetch each time from the Allie. Then, he receives a bunch of machine configurations and must run the given message and start to decrypt it. For every decrypted word: he checks if it’s in the dictionary specified. If the entire message is in the dictionary - a candidate is found, and the agent reports back to Allie. The agents go over the machine configurations in “broth force”.
 
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="1440" alt="Screenshot 2023-04-20 at 19 14 01" src="https://user-images.githubusercontent.com/76840545/233443610-802745a4-8842-4734-8e36-61590ee1f834.png">
 
 Considering the Server-side of the app, we designed an Apache-tomcat server. The server held the Enigma Machine, and all of its logic and was in charge of synchronizing the user’s data.
 
