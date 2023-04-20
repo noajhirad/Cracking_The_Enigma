@@ -21,6 +21,7 @@ The game starts with the **UBoat**, the first desktop client, that initiates a c
 
 
 Afterward, the UBoat initiates the task. He specifies how many Allies can enroll in the competition, configures the enigma machine, and encrypt a message. The UBoat can only encrypt words that appear in the dictionary (which he can see in the decryption tab). He can write it himself or click on the dictionary to choose the desired word. Finally, after enough teams enrolled in the competition, he spread his encrypted message and let the competition begin - the winner is the first team to decrypt it. 
+
 <img width="1440" alt="Screenshot 2023-04-20 at 19 09 16" src="https://user-images.githubusercontent.com/76840545/233443347-96ff2cab-1fe2-4827-8df9-b4391a5fe80e.png">
 <img width="1440" alt="Screenshot 2023-04-20 at 19 14 15" src="https://user-images.githubusercontent.com/76840545/233443355-fa64227f-dce8-4354-a7d3-f3da5e986521.png">
 
