@@ -26,7 +26,7 @@ Afterward, the UBoat initiates the task. He specifies how many Allies can enroll
 
 The second HTTP client is the **Allie**, a team leader in the competition. The Allie has several agents working for him trying to solve the UBoat task. His job is to spread the tasks to the Agents, gather the decryption candidates from them, and later report back to the Uboat. The Allie waits until enough Agents register to work with him, and after he is satisfied with the number of Agents enrolled, he can mark his team as ready - which indicates the server that the competition can start.
 
-<img width="1440" alt="Screenshot 2023-04-20 at 19 14 23" src="https://user-images.githubusercontent.com/76840545/233443502-8f9badb0-7eb2-4ef0-bdaf-eac108e122ba.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 14 23" src="https://user-images.githubusercontent.com/76840545/233443502-8f9badb0-7eb2-4ef0-bdaf-eac108e122ba.png" width="300">
 <img width="1440" alt="Screenshot 2023-04-20 at 19 13 50" src="https://user-images.githubusercontent.com/76840545/233443510-d75b89e5-2fd9-41e1-becc-cd0304efcdb9.png">
 <img width="1440" alt="Screenshot 2023-04-20 at 19 13 08" src="https://user-images.githubusercontent.com/76840545/233443514-7484f5f8-2b64-4922-a214-e843ef51101b.png">
 
