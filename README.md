@@ -59,18 +59,25 @@ After this explanation, the machine configuration code is consisted of:
 1. The plugboard (like mentioned before isn’t in use in this version of our project).
 
 **The difficulties of the competition:**
+
 There are three levels of difficulty for the game: 
+
 \*  Easy: The Rotors in use, their location, and the reflector are all known; the decryption process only includes finding their order.
+
 \*  Intermitted: The Rotors in used and their location are known; the decryption process includes finding their order and the reflector number.
+
 \*  Hard: The Rotors used are known; everything else needs to be discovered.
+
 \*  Impossible: none of the configuration code parts are known; everything needs to be discovered.
 
 **How to run this project**
+
 First, to open the game you’ll need to have Apache-tomcat installed.
 You’ll need to deploy the webserver .war to Tomcat; you can find it in the directory Jars/Server\_Web.
 After you launched the server, you can run each one of the desktop applications, using the corresponding .bat file that can be found in Jars/{desktopAppName}\_jar.
 For example, to run the Uboat you should run Uboat.bat which can be found in Jars/Uboat\_jar.
 
 **What can be improved:**
+
 Due to time limitations, we didn’t have sufficient time to refactor our code as we wished. There are a few duplicated code lines that we think could have been better arranged to make our code more readable.
 
