@@ -1,7 +1,7 @@
 
 **The Enigma Machine**
 
-I created this project collaborating with [Noa Jhirad](https://github.com/noajhirad) as part of a Java-based software development course we participated in while pursuing our BSc. in Computer Science at the Academic College of Tel Aviv-Yafo.
+I created this project collaborating with [Hamutal Azoulay](https://github.com/HamutalAz) as part of a Java-based software development course we participated in while pursuing our BSc. in Computer Science at the Academic College of Tel Aviv-Yafo.
 
 In a superficial description, we implemented a generic Enigma Machine used in a client-server architecture (HTTP-based). The project includes three types of clients (UBoat, Allie, and Agent), developed as three independent desktop applications (based on Java FX) and event-oriented methodology.
 
